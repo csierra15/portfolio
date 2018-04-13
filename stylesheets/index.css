@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin: 0 auto;
@@ -54,6 +53,10 @@ header {
 
 .box-btm-right {
   background-color: #C0C0C0;
+}
+
+a {
+  color: #174C49;
 }
 
 @media only screen and (min-width: 800px) {
