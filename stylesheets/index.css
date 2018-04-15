@@ -1,67 +1,157 @@
 * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /*reset Chrome user agent styles*/
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0px;
+  -webkit-padding-after: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+}
+
+/* general styles */
+
+body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #444;
   text-align: center;
-  margin: 0 auto;
   list-style: none;
 }
 
+hr {
+  border-color: #0A211F;
+  border-image: none;
+  border-style: solid none none;
+  border-width: 3px 0 0;
+  margin: 0 auto;
+  width: 60%;
+  clear: both;
+}
+
+button {
+  width: 4em;
+  height: 2em;
+  border-radius: 5px;
+  border: 2px solid #184C48;
+  cursor: pointer;
+}
+
+button:hover, button:hover a {
+  background-color: #184C48;
+  color: #FFFF;
+}
+
+a {
+  color: #184C48;
+  text-decoration: none;
+}
+
+/* header styles */
+
 nav {
   height: 3em;
-  background-color: #C0C0C0;
 }
 
 nav li:hover {
   cursor: pointer;
 }
 
-header, #bio {
-  height: 12em;
-}
-
-header {
-  background-color: #DCDCDC;
-  padding-top: 3em;
-}
-
-#bio {
-  background-color: #A9A9A9;
+header h1 {
+  font-size: 2rem;
 }
 
 #hero-shot {
-  border: 1px solid;
-  height: 10em;
-  width: 8em;
-  float: left;
-  margin: 1em;
+  border: 0;
+  height: 300px;
+  width: 300px;
+  margin: 1em auto;
+  border-radius: 1000px;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+/* project styles */
+
+#bio {
+  margin-bottom: 3rem;
 }
 
 .box {
-  height: 8em;
+  color: #FFFF;
+}
+
+.box h4 {
+
 }
 
 .box-top-left {
-  background-color: #808080;
+  background-color: #184C48;
 }
 
 .box-top-right {
-  background-color: #696969;
+  background-color: #3F6663;
 }
 
 .box-btm-left {
-  background-color: #778899;
+  background-color: #309990;
 }
 
 .box-btm-right {
-  background-color: #C0C0C0;
+  background-color: #7B9996;
 }
 
-a {
-  color: #174C49;
-}
-
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
   nav li {
     float: left;
     padding: 1em 2em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav li {
+    display: none;
+  }
+
+  .topnav .hamburger {
+    float: right;
+    display: block;
+    padding-right: 4px;
+    cursor: pointer;
+  }
+
+  .bar-icon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    background-color: #FFFF;
+    position: relative;
+  }
+
+  .topnav.responsive .hamburger {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 5px;
   }
 }
