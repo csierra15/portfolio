@@ -206,7 +206,6 @@ header {
 }
 
 .icons {
-  display: inline;
   margin: 1rem auto;
 }
 
@@ -240,32 +239,20 @@ footer {
 
 /* responsive styles */
 
-@media only screen and (min-width: 1130px) {
-  .big-box {
-    width: 75%;
-    min-height: 100vh;
-    margin: 0 auto;
-  }
-
-  .box {
-    width: 50%;
-    height: 50%;
-    float: left;
-  }
-
-  .box-btm-left {
-    clear: left;
-  }
-
-  footer {
-    padding-top: 12rem;
-  }
-}
-
 @media only screen and (min-width: 801px) {
   nav li {
     float: left;
     padding: 1em 2em;
+  }
+
+  .screenshot {
+    clear: both;
+    float: left;
+  }
+
+  .tech {
+    float: right;
+    margin-top: 3rem;
   }
 }
 
