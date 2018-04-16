@@ -2,9 +2,16 @@
 
 $(document).ready(function() {
 
+  function toggleExpanded(show, hide) {
+    $('.projects i').toggleClass('fa-chevron-up fa-chevron-down');
+    show.slideToggle('slow');
+    hide.forEach((item) => {
+      item.slideUp('slow');
+    })
+  }
+
   $('.box-top-left').click(() => {
-    $('#foodleExpanded').slideToggle('slow');
-    $('#quizExpanded', '#budgetrExpanded', '#foodPrepExpanded').hide();
+    toggleExpanded($('#foodleExpanded'), [$('#quizExpanded', '#budgetrExpanded', '#foodPrepExpanded')]);
   });
 
   $('#foodleClose').click(() => {
@@ -12,8 +19,7 @@ $(document).ready(function() {
   });
 
   $('.box-top-right').click(() => {
-    $('#quizExpanded').slideToggle('slow');
-    $('#foodleExpanded', '#budgetrExpanded', '#foodPrepExpanded').hide();
+    toggleExpanded($('#quizExpanded'),[$('#foodleExpanded', '#budgetrExpanded', '#foodPrepExpanded')]);
   });
 
   $('#quizClose').click(() => {
@@ -21,8 +27,7 @@ $(document).ready(function() {
   });
 
   $('.box-btm-left').click(() => {
-    $('#budgetrExpanded').slideToggle('slow');
-    $('#foodleExpanded', '#quizExpanded', '#foodPrepExpanded').hide();
+    toggleExpanded($('#budgetrExpanded'), [$('#foodleExpanded', '#quizExpanded', '#foodPrepExpanded')]);
   });
 
   $('#budgetrClose').click(() => {
@@ -30,8 +35,7 @@ $(document).ready(function() {
   });
 
   $('.box-btm-right').click(() => {
-    $('#foodPrepExpanded').slideToggle('slow');
-    $('#foodleExpanded', '#quizExpanded', '#budgetrExpanded').hide();
+    toggleExpanded($('#foodPrepExpanded'), [$('#foodleExpanded', '#quizExpanded', '#budgetrExpanded')]);
   });
 
   $('#foodPrepClose').click(() => {
