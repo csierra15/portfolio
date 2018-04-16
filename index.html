@@ -28,20 +28,25 @@
       </nav>
 
       <!-- Bio -->
-      <h1>Hi, I'm Carly.</h1>
-      <h2>Web developer based in Middle Tennessee.</h2>
-      <div>[placeholder for background image]</div>
+      <div class="header-container">
+        <h1>Hi, I'm Carly.</h1>
+        <h2>Web developer in Middle Tennessee.</h2>
+      </div>
+      <img src="images/headshot.jpg" alt="me!" id="hero-shot">
     </header>
+    <hr>
     <main role="main">
       <section id="bio">
         <h2>ABOUT ME</h2>
-        <img src="images/headshot.jpg" alt="me!" id="hero-shot">
         <h3>
           I'm a fullstack web developer with a passion for the front end. As a recent graduate of Thinkful's Fullstack Flex bootcamp,
-          my coding journey is just beginning! I love coding because breaking down problems and finding a solution is awfully satisfying.
+          my coding journey is just beginning! I love coding because breaking down problems and finding a solution is deeply satisfying.
           I delight in writing accessible code, experimenting with new languages and frameworks, and seeing my ideas come to life.
+          I'm eager for the opportunity to create new projects with a team and explore web development deeper.
         </h3>
-        <h3>When I'm not coding, I'm probably cooking a big meal, hiking a trail, having deep conversations, or watching a movie with my husband.</h3>
+        <h3>
+          When I'm not coding, I'm probably cooking a big meal, hiking a trail, talking current events and philosophy with friends, or watching a movie with my husband.
+        </h3>
       </section>
       <hr>
 
@@ -50,65 +55,204 @@
         <h2>PROJECTS</h2>
         <div class="big-box">
           <div class="box box-top-left">
-            <h4>Foodle</h4>
-            <p>A Spoonacular API where a user can search for recipes by ingredients and get info like cooking time, number of servings, and visit recipe site.</p>
+            <h3>Foodle</h3>
+            <p>An API hack using <a href="https://spoonacular.com/food-api" target="_blank">Spoonacular</a> where a user can search for recipes by ingredients and get info like cooking time, number of servings, and visit recipe site.</p>
             <p>Made with HTML5, CSS3, JavaScript, & jQuery</p>
             <i class="fa fa-2x fa-chevron-down"></i>
-            <div>[placeholder for screenshots]</div>
-            <button><a href="https://csierra15.github.io/foodle/">Live</a></button>
-            <button><a href="https://github.com/csierra15/foodle">Code</a></button>
           </div>
+          <!-- Foodle Expanded -->
+          <div class="container">
+            <div id="foodleExpanded">
+              <div class="row">
+                <div class="closeDetails" id="foodleClose">X</div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <img class="screenshot" src="images/foodle.png" alt="example of Foodle App">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <h5>MADE WITH</h5>
+                <div class="col-6">
+                  <div>
+                    <div title="HTML5" class="icons"><img src="images/htmllogo.png" alt="HTML5"></div>
+                  </div>
+                  <div>
+                    <div title="CSS3" class="icons"><img src="images/csslogo.png" alt="CSS3"></div>
+                  </div>
+                  <div>
+                    <div title="JavaScript" class="icons"><img src="images/javascriptlogo.png" alt="JavaScript"></div>
+                  </div>
+                  <div>
+                    <div title="jQuery" class="icons"><img src="images/jquerylogo.png" alt="jQuery"></div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button><a href="https://csierra15.github.io/foodle/" target="_blank">Live</a></button>
+                  <button><a href="https://github.com/csierra15/foodle" target="_blank">Code</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Foodle Expanded -->
           <div class="box box-top-right">
-            <h4>Quiz App</h4>
-            <p>A simple quiz app where a user can sumbit guesses, .</p>
+            <h3>Quiz App</h3>
+            <p>A simple cooking quiz app where a user can cycle through questions, sumbit guesses, and see the correct number answered.</p>
             <p>Made with HTML5, CSS3, JavaScript, & jQuery</p>
-            <div>[placeholder for screenshots]</div>
             <i class="fa fa-2x fa-chevron-down"></i>
-            <button><a href="https://csierra15.github.io/cooking-quiz-app/">Live</a></button>
-            <button><a href="https://github.com/csierra15/cooking-quiz-app">Code</a></button>
           </div>
+          <!-- Quiz Expanded -->
+          <div class="container">
+            <div id="quizExpanded">
+              <div class="row">
+                <div class="closeDetails">X</div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <img class="screenshot" src="images/quiz.png" alt="example of Quiz App">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <h5>MADE WITH</h5>
+                <div class="col-6">
+                  <div>
+                    <div title="HTML5" class="icons"><img src="images/htmllogo.png" alt="HTML5"></div>
+                  </div>
+                  <div>
+                    <div title="CSS3" class="icons"><img src="images/csslogo.png" alt="CSS3"></div>
+                  </div>
+                  <div>
+                    <div title="JavaScript" class="icons"><img src="images/javascriptlogo.png" alt="JavaScript"></div>
+                  </div>
+                  <div>
+                    <div title="jQuery" class="icons"><img src="images/jquerylogo.png" alt="jQuery"></div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button><a href="https://csierra15.github.io/cooking-quiz-app/" target="_blank">Live</a></button>
+                  <button><a href="https://github.com/csierra15/cooking-quiz-app" target="_blank">Code</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Quiz Expanded -->
           <div class="box box-btm-left">
-            <h4>Budget Tracker</h4>
-            <p>A straightforward app for tracking income and expenses.</p>
+            <h3>Budgetr</h3>
+            <p>A demo app for tracking income, expenses, and savings goals.</p>
             <p>Made with HTML5, CSS3, JavaScript, jQuery, Node, Express, & Mongoose</p>
-            <div>[placeholder for screenshots]</div>
             <i class="fa fa-2x fa-chevron-down"></i>
-            <button><a href="https://fierce-hollows-75247.herokuapp.com/">Live</a></button>
-            <button><a href="https://github.com/csierra15/budgetr">Code</a></button>
           </div>
+          <!-- Budgetr Expanded -->
+          <div class="container">
+            <div id="budgetrExpanded">
+              <div class="row">
+                <div class="closeDetails">X</div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <img class="screenshot" src="images/budgetr.png" alt="example of Budgetr App">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-6">
+                  <h5>MADE WITH</h5>
+                  <div>
+                    <div title="HTML5" class="icons"><img src="images/htmllogo.png" alt="HTML5"></div>
+                  </div>
+                  <div>
+                    <div title="CSS3" class="icons"><img src="images/csslogo.png" alt="CSS3"></div>
+                  </div>
+                  <div>
+                    <div title="JavaScript" class="icons"><img src="images/javascriptlogo.png" alt="JavaScript"></div>
+                  </div>
+                  <div>
+                    <div title="jQuery" class="icons"><img src="images/jquerylogo.png" alt="jQuery"></div>
+                  </div>
+                  <div>
+                    <div title="Node" class="icons"><img src="images/nodelogo.png" alt="Node"></div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button><a href="https://fierce-hollows-75247.herokuapp.com/" target="_blank">Live</a></button>
+                  <button><a href="https://github.com/csierra15/budgetr" target="_blank">Code</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Budgetr Expanded -->
           <div class="box box-btm-right">
-            <h4>Food Prep</h4>
+            <h3>Food Prep</h3>
             <p>An app for creating meal plans and making lists.</p>
             <p>Made with React, Redux, React Router, CSS3, JSX, Node, Express, Mongoose</p>
-            <div>[placeholder for screenshots]</div>
             <i class="fa fa-2x fa-chevron-down"></i>
-            <button><a href="https://gallant-swanson-133f3e.netlify.com/">Live</a></button>
-            <button><a href="https://github.com/csierra15/food-prep-client">Code</a></button>
           </div>
+          <!-- Food Prep Expanded -->
+          <div class="container">
+            <div id="foodPrepExpanded">
+              <div class="row">
+                <div class="closeDetails">X</div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <img class="screenshot" src="images/foodprep.png" alt="example of Food Prep App">
+                </div>
+              </div>
+              <hr>
+              <div class="tech row">
+                <h5>MADE WITH</h5>
+                <div class="col-6">
+                  <div>
+                    <div title="HTML5" class="icons"><img src="images/htmllogo.png" alt="HTML5"></div>
+                  </div>
+                  <div>
+                    <div title="CSS3" class="icons"><img src="images/csslogo.png" alt="CSS3"></div>
+                  </div>
+                  <div>
+                    <div title="JavaScript" class="icons"><img src="images/javascriptlogo.png" alt="JavaScript"></div>
+                  </div>
+                  <div>
+                    <div title="jQuery" class="icons"><img src="images/jquerylogo.png" alt="jQuery"></div>
+                  </div>
+                  <div>
+                    <div title="Node" class="icons"><img src="images/nodelogo.png" alt="Node"></div>
+                  </div>
+                  <div>
+                    <div title="React" class="icons"><img src="images/reactlogo.png" alt="React"></div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button><a href="https://gallant-swanson-133f3e.netlify.com/" target="_blank">Live</a></button>
+                  <button><a href="https://github.com/csierra15/food-prep-client" target="_blank">Code</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Food Prep Expanded -->
         </div>
       </section>
-
-      <!-- Expanded Projects -->
-
-      <div class="container">
-        
-      </div>
 
       <!-- Contact Info -->
       <footer role="contentinfo">
         <div>
-          Let's talk!
           <div>
-            <a href="https://github.com/csierra15" style="color:#174C49;"><i class="fab fa-github-square fa-3x"></i></a>
+            Get in touch:
           </div>
-          <div><a href="https://www.linkedin.com/in/carly-sierra-366155150/" style="color:#174C49;"><i class="fab fa-linkedin fa-3x"></i></a></div>
+          <div class="contactIcons">
+            <a href="https://github.com/csierra15" target="_blank" style="color:#404040;"><i class="fab fa-github-square fa-3x"></i></a>
+          </div>
+          <div class="contactIcons"><a href="https://www.linkedin.com/in/carly-sierra-366155150/" target="_blank" style="color:#404040;"><i class="fab fa-linkedin fa-3x"></i></a></div>
           <div>
+            <div>Email:</div>
             <a href="mailto:carlywsierra@gmail.com" target="_blank">carlywsierra@gmail.com</a>
           </div>
         </div>
       </footer>
     </main>
 
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>

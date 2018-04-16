@@ -1,7 +1,9 @@
 'use strict';
 
-$(function() {
+$(document).ready(function() {
   $('.hamburger').click(() => {
     $('.topnav').toggleClass('responsive');
-  })
+  });
+
+  
 })
