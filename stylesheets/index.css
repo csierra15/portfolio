@@ -42,12 +42,16 @@ a {
 
 a:visited {
   text-decoration: none;
-  color: #EF4566;
+  color: #404040;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 button {
-  width: 4em;
-  height: 2em;
+  width: 4rem;
+  height: 2rem;
   border-radius: 5px;
   border: 2px solid #404040;
 }
@@ -71,11 +75,28 @@ button:hover, button:hover a {
 /* header styles */
 
 nav {
-  height: 3em;
+  height: 3rem;
+  position: fixed;
+  background-color: #FFF;
+  width: 100%;
 }
 
 nav li:hover {
   cursor: pointer;
+}
+
+nav li a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav li a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: none;
 }
 
 .header-container {
@@ -83,9 +104,9 @@ nav li:hover {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #83AE9B;
-  height: 20em;
+  height: 25rem;
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 header h1 {
@@ -107,7 +128,7 @@ header h2 {
 }
 
 header {
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
 }
 
 #bio {
@@ -115,8 +136,12 @@ header {
 }
 
 #bio h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 3rem auto;
+}
+
+#bio h3 {
+  font-size: 1.5rem;
 }
 
 /* project styles */
@@ -126,7 +151,7 @@ header {
 }
 
 #projects h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -139,16 +164,16 @@ header {
 }
 
 .box {
-  padding: 3em;
+  padding: 3rem;
   font-family: 'Merriweather', serif;
 }
 
 .box h3, .box p {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .box h3 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .box-top-left {
@@ -167,7 +192,7 @@ header {
 }
 
 .box-btm-right {
-  color: #DCDCDC;
+  color: #FFF;
   background-color: #F69A9A;
 }
 
@@ -229,7 +254,7 @@ header {
 
 footer {
   width: 100%;
-  margin: 3rem auto 1rem auto;
+  margin: 3rem auto 3rem auto;
   display: block;
 }
 
@@ -240,9 +265,13 @@ footer {
 /* responsive styles */
 
 @media only screen and (min-width: 801px) {
+  .header-container {
+    height: 30rem;
+  }
+
   nav li {
     float: left;
-    padding: 1em 2em;
+    padding: 1rem 2rem;
   }
 
   .screenshot {

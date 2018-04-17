@@ -42,7 +42,27 @@ $(document).ready(function() {
     $('#foodPrepExpanded').slideUp('slow');
   });
 
+  // nav bar to hamburger
   $('.hamburger').click(() => {
     $('.topnav').toggleClass('responsive');
   });
-})
+
+  // scroll on navbar links
+  $('#bio-link').click(() => {
+    $('html, body').animate({
+      scrollTop: ($('#bio-scroll').offset().top)
+    },500);
+  });
+
+  $('#projects-link').click(() => {
+    $('html, body').animate({
+      scrollTop: ($('#projects-scroll').offset().top)
+    },500);
+  });
+
+  $('#contact-link').click(() => {
+    $('html, body').animate({
+      scrollTop: ($('#contact').offset().top)
+    },500);
+  });
+});
