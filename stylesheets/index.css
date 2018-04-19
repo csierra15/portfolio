@@ -212,12 +212,8 @@ header {
   text-decoration: underline;
 }
 
-.box.hideDetails {
+.box.details {
   width: 100%;
-}
-
-.box.hideDetails p {
-  display: none;
 }
 
 #foodleExpanded {
