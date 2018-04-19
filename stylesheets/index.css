@@ -81,7 +81,14 @@ nav {
   width: 100%;
 }
 
-nav li:hover {
+#top-of-page {
+  float: left;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 0 0 1rem;
+}
+
+nav li:hover, nav #top-of-page {
   cursor: pointer;
 }
 
@@ -300,7 +307,7 @@ footer {
   .topnav .hamburger {
     float: right;
     display: block;
-    padding-left: 4px;
+    padding-right: 4px;
     padding-top: 4px;
     cursor: pointer;
   }
@@ -324,6 +331,10 @@ footer {
     display: block;
     right: 0;
     top: 0;
+  }
+
+  .topnav.responsive #top-of-page {
+    display: none;
   }
 
   .topnav.responsive li {

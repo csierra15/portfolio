@@ -48,6 +48,12 @@ $(document).ready(function() {
   });
 
   // scroll on navbar links
+  $('#top-of-page').click(() => {
+    $('html, body').animate({
+      scrollTop: ($('html').offset().top)
+    },1000);
+  });
+
   $('#bio-link').click(() => {
     $('html, body').animate({
       scrollTop: ($('#bio-scroll').offset().top)
