@@ -104,7 +104,7 @@ nav li a:hover {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #83AE9B;
-  height: 25rem;
+  height: 28rem;
   width: 100%;
   padding-top: 5rem;
 }
@@ -223,9 +223,11 @@ header {
 
 .screenshot {
   max-height: 60rem;
-  width: 80%;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.50);
 }
 
 .closeDetails {
@@ -271,7 +273,13 @@ footer {
 
 @media only screen and (min-width: 801px) {
   .header-container {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #83AE9B;
     height: 30rem;
+    width: 100%;
+    padding-top: 5rem;
   }
 
   nav li {
@@ -298,7 +306,8 @@ footer {
   .topnav .hamburger {
     float: right;
     display: block;
-    padding-right: 4px;
+    padding-left: 4px;
+    padding-top: 4px;
     cursor: pointer;
   }
 
@@ -319,7 +328,7 @@ footer {
   .topnav.responsive .hamburger {
     position: absolute;
     display: block;
-    right: 0;
+    left: 0;
     top: 0;
   }
 
@@ -327,6 +336,7 @@ footer {
     float: none;
     display: block;
     text-align: left;
+    margin-top: 4px;
     padding: 5px;
   }
 }

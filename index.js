@@ -11,7 +11,7 @@ $(document).ready(function() {
   }
 
   $('.box-top-left').click(() => {
-    toggleExpanded($('#foodleExpanded'), [$('#quizExpanded', '#budgetrExpanded', '#foodPrepExpanded')]);
+    toggleExpanded($('#foodleExpanded'), [$('#quizExpanded'), $('#budgetrExpanded'), $('#foodPrepExpanded')]);
   });
 
   $('#foodleClose').click(() => {
@@ -19,7 +19,7 @@ $(document).ready(function() {
   });
 
   $('.box-top-right').click(() => {
-    toggleExpanded($('#quizExpanded'),[$('#foodleExpanded', '#budgetrExpanded', '#foodPrepExpanded')]);
+    toggleExpanded($('#quizExpanded'),[$('#foodleExpanded'), $('#budgetrExpanded'), $('#foodPrepExpanded')]);
   });
 
   $('#quizClose').click(() => {
@@ -27,7 +27,7 @@ $(document).ready(function() {
   });
 
   $('.box-btm-left').click(() => {
-    toggleExpanded($('#budgetrExpanded'), [$('#foodleExpanded', '#quizExpanded', '#foodPrepExpanded')]);
+    toggleExpanded($('#budgetrExpanded'), [$('#foodleExpanded'), $('#quizExpanded'), $('#foodPrepExpanded')]);
   });
 
   $('#budgetrClose').click(() => {
@@ -35,7 +35,7 @@ $(document).ready(function() {
   });
 
   $('.box-btm-right').click(() => {
-    toggleExpanded($('#foodPrepExpanded'), [$('#foodleExpanded', '#quizExpanded', '#budgetrExpanded')]);
+    toggleExpanded($('#foodPrepExpanded'), [$('#foodleExpanded'), $('#quizExpanded'), $('#budgetrExpanded')]);
   });
 
   $('#foodPrepClose').click(() => {
