@@ -176,6 +176,11 @@ header {
   font-size: 2rem;
 }
 
+.box:hover {
+  border: 1px 1px 1px 0 solid #333;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
+}
+
 .box-top-left {
   color: #F5F5F5;
   background-color: #83AE9B;

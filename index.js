@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
   function toggleExpanded(show, hide) {
-    $('.projects i').toggleClass('fa-chevron-up fa-chevron-down');
+    $('.box i').toggleClass('fa-chevron-up fa-chevron-down');
     show.slideToggle('slow');
     hide.forEach((item) => {
       item.slideUp('slow');
