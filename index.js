@@ -4,42 +4,43 @@ $(document).ready(function() {
 
   function toggleExpanded(show, hide) {
     $('.box i').toggleClass('fa-chevron-up fa-chevron-down');
-    show.slideToggle('slow');
+    $('.box').toggleClass('hideDetails')
+    show.toggle('slow');
     hide.forEach((item) => {
-      item.slideUp('slow');
+      item.toggle('slow');
     })
   }
 
   $('.box-top-left').click(() => {
-    toggleExpanded($('#foodleExpanded'), [$('#quizExpanded'), $('#budgetrExpanded'), $('#foodPrepExpanded')]);
+    toggleExpanded($('#foodleExpanded'), [$('.box-top-right'), $('.box-btm-left'), $('.box-btm-right')]);
   });
 
   $('#foodleClose').click(() => {
-    $('#foodleExpanded').slideUp('slow');
+    toggleExpanded($('#foodleExpanded'), [$('.box-top-right'), $('.box-btm-left'), $('.box-btm-right')]);
   });
 
   $('.box-top-right').click(() => {
-    toggleExpanded($('#quizExpanded'),[$('#foodleExpanded'), $('#budgetrExpanded'), $('#foodPrepExpanded')]);
+    toggleExpanded($('#quizExpanded'),[$('.box-top-left'), $('.box-btm-left'), $('.box-btm-right')]);
   });
 
   $('#quizClose').click(() => {
-    $('#quizExpanded').slideUp('slow');
+    toggleExpanded($('#quizExpanded'),[$('.box-top-left'), $('.box-btm-left'), $('.box-btm-right')]);
   });
 
   $('.box-btm-left').click(() => {
-    toggleExpanded($('#budgetrExpanded'), [$('#foodleExpanded'), $('#quizExpanded'), $('#foodPrepExpanded')]);
+    toggleExpanded($('#budgetrExpanded'), [$('.box-top-right'), $('.box-top-left'), $('.box-btm-right')]);
   });
 
   $('#budgetrClose').click(() => {
-    $('#budgetrExpanded').slideUp('slow');
+    toggleExpanded($('#budgetrExpanded'), [$('.box-top-right'), $('.box-top-left'), $('.box-btm-right')]);
   });
 
   $('.box-btm-right').click(() => {
-    toggleExpanded($('#foodPrepExpanded'), [$('#foodleExpanded'), $('#quizExpanded'), $('#budgetrExpanded')]);
+    toggleExpanded($('#foodPrepExpanded'), [$('.box-top-right'), $('.box-top-left'), $('.box-btm-left')]);
   });
 
   $('#foodPrepClose').click(() => {
-    $('#foodPrepExpanded').slideUp('slow');
+    toggleExpanded($('#foodPrepExpanded'), [$('.box-top-right'), $('.box-top-left'), $('.box-btm-left')]);
   });
 
   // nav bar to hamburger
