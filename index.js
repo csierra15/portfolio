@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   function toggleExpanded(show, hide) {
     $('.box i').toggleClass('fa-chevron-up fa-chevron-down');
-    $('.box').toggleClass('details')
+    $('.box').toggleClass('details');
     show.toggle('slow');
     hide.forEach((item) => {
       item.toggle('slow');
