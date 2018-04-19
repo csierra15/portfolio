@@ -104,7 +104,7 @@ nav li a:hover {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #83AE9B;
-  height: 28rem;
+  height: 21rem;
   width: 100%;
   padding-top: 5rem;
 }
@@ -273,13 +273,7 @@ footer {
 
 @media only screen and (min-width: 801px) {
   .header-container {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: #83AE9B;
     height: 30rem;
-    width: 100%;
-    padding-top: 5rem;
   }
 
   nav li {
