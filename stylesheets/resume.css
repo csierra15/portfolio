@@ -1,3 +1,9 @@
+/* FONTS:
+font-family: 'Gothic A1', sans-serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Work Sans', sans-serif;
+ */
+
 * {
   list-style: none;
   margin: 0;
@@ -13,4 +19,9 @@
   -webkit-padding-after: 0px;
   -webkit-padding-start: 0px;
   -webkit-padding-end: 0px;
+}
+
+body {
+  font-family: 'Gothic A1', sans-serif;
+  text-align: center;
 }
