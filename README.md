@@ -1,5 +1,5 @@
 # Portfolio
 
-My portfolio site. Live: https://csierra15.github.io/portfolio/
+My portfolio site featuring my most recent projects. Live: https://csierra15.github.io/portfolio/
 
-Made using HTML, CSS, JS, jQuery, and <3
+Made using HTML, CSS, JS, and jQuery.
