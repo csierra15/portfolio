@@ -119,11 +119,13 @@ nav li a:hover {
 header h1 {
   font-size: 3rem;
   color: #101010;
+  margin-bottom: 1rem;
 }
 
 header h2 {
   font-size: 2rem;
   color: #101010;
+  font-weight: lighter;
 }
 
 #hero-shot {
