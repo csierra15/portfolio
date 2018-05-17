@@ -40,6 +40,27 @@ a:visited {
   color: #444847;
 }
 
+button {
+  border: 1px solid #00225C;
+  color: #00225C;
+  background-color: #FFF;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button a, button a:hover, button a:visited {
+  color: #00225C;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #00225C;
+}
+
+button:hover a {
+  color: #FFF;
+}
+
 h2 {
   font-size: 1.8rem;
 }
@@ -84,4 +105,17 @@ header h2 {
   display: inline-block;
   padding: 0 1px;
   margin-bottom: 0.2rem;
+}
+
+.project-desc {
+  font-style: italic;
+}
+
+.project-desc, .projects button, experience span, .experience p, .education span, .education p{
+  margin-bottom: 1rem;
+}
+
+.experience span, .education span {
+  font-size: 0.8rem;
+  font-style: italic;
 }
