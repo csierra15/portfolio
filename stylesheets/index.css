@@ -120,12 +120,35 @@ header h1 {
   font-size: 3rem;
   color: #101010;
   margin-bottom: 1rem;
+  animation: type 7s steps(60, end);
 }
 
 header h2 {
   font-size: 2rem;
   color: #101010;
   font-weight: lighter;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+     -o-animation: fadein 4s; /* Opera < 12.1 */
+        animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+header h1, header h2 {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+}
+
+@keyframes type{
+  from { width: 0; }
+  to { width: 100% }
 }
 
 #hero-shot {
@@ -137,16 +160,18 @@ header h2 {
 }
 
 header {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 #bio {
   margin: 3rem;
+  text-align: left;
 }
 
 #bio h2 {
   font-size: 2rem;
   margin: 3rem auto;
+  text-align: center;
 }
 
 #bio h3 {
@@ -280,6 +305,7 @@ footer {
 
 .contactIcons {
   display: inline;
+  padding: 1rem;
 }
 
 /* responsive styles */
@@ -371,6 +397,6 @@ footer {
   }
 
   footer {
-    padding-top: 12rem;
+    padding-top: 1rem;
   }
 }
