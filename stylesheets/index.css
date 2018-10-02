@@ -213,6 +213,7 @@ header {
 .box:hover {
   border: 1px 1px 1px 0 solid #333;
   box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
 .box-top-left {
