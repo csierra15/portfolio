@@ -92,6 +92,21 @@ nav li:hover, nav #top-of-page {
   cursor: pointer;
 }
 
+nav li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+nav li:hover:after {
+  width: 100%;
+  background: pink;
+}
+
 nav li a {
   color: #000;
   text-decoration: none;
